@@ -4,6 +4,7 @@
     --PrimaryTextColour: #FFFFFF;
     --SecondaryTextColour: #D9171F;
     --BoxShadow: 0 2px 4px rgba(217, 23, 31, 1);
+    --ButtonColor: rgba(225, 225, 225, 0.05);
 }
 
 .home{
@@ -20,7 +21,7 @@
 .homeContent{
     width: 100%;
     height: max-content;
-    padding: 8rem 1.5rem 3rem;
+    padding: 5rem 1.5rem 3rem;
     display: flex;
     row-gap: 3rem;
     flex-direction: column;
@@ -34,26 +35,68 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        font-size: 2.5rem;
+        font-size: 2.3rem;
+        padding: 0 6.8rem;
+
+        .quoteRed{
+            color: #D9171F;
+        }
+    }
+
+    .icons{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
         padding: 0 3.5rem;
+        position: relative;
+        top: -1.5rem;
+    }
+
+    .btn-container{
+        display: flex;
+        justify-content: center;
+        padding: 0 3.5rem;
+        position: relative;
+        top: -2.5rem;
+
+        .btn-cv{
+            color: var(--PrimaryTextColour);
+            font-size:1.5rem;
+            width: 13rem;
+            height: 4.5rem;
+            border-radius: 30px;
+            background-color: var(--ButtonColor);
+            box-shadow: 5px 5px 10px rgba(217, 23, 31, 0.5);
+        }
     }
 
     .textDiv{
-        padding: 2rem 0;
+        padding: 0 0;
         white-space: nowrap;
         animation: name;
         animation-duration: 20s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
+        position: relative;
+        top: 2rem;
 
         .textName{
             position: relative;
-            font-size: 3.3rem;
+            font-size: 5.5rem;
 
             .textSurname{
                 color: var(--SecondaryTextColour);
             }
         }
+    }
+
+    .mainPicture{
+        display: flex;
+        justify-content: center;
+        padding: 0 3.5rem;
+        rotate: 29deg;
+        position: relative;
+        top: -13.4rem;
     }
 }
 
@@ -65,5 +108,59 @@
     }
     100% {
         transform: translateX(-100%);
+    }
+}
+
+/* Media Queries */
+@media screen and (min-width: 500px) {
+    .home{
+        width: 500px;
+        .homeContent{
+            .homeQuote{
+                font-size: 2.4rem;
+                padding: 1rem 7rem;
+            }
+        }
+    }
+
+    .textDiv{
+        width: 500px;
+    }
+
+    .homeContent{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width: 660px){
+    .home{
+        .homeContent{
+            .homeQuote{
+                padding: 2rem 1rem;
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+    }
+}
+
+@media screen and (min-width:940px){
+    .home{
+        height: 70vh;
+    }
+}
+
+@media screen and (min-width: 1240px){
+    .home{
+        height: 80vh;
+
+        .homeContent{
+            padding-left: 0;
+            padding-right: 0;
+
+            .homeQuote{
+                padding: 2rem 1rem;
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
     }
 }
