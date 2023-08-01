@@ -14,7 +14,7 @@ function Home() {
         
         <div className="textDiv">
           <h1 className='homeTitle'>
-            "Hard Work Beats Talent When Talent Doesn't Work Hard"
+            "Hard Work Beats Talent When Talent <span className='quoteRed'> Doesn't Work Hard"</span>
           </h1>
         </div>
 

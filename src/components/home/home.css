@@ -10,7 +10,9 @@
 /* Container styling for all page content*/
 
 .home{
+    background-color: grey;
     width: 100%;
+    height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -19,8 +21,8 @@
 
     .homeContent{
         width: 100%;
-        height: max-content;
-        padding: 0rem 1.5rem 3rem;
+        height: 100vh;
+        padding: 0rem 1.5rem 0rem;
         display: flex;
         row-gap: 3rem;
         flex-direction: column;
@@ -33,7 +35,8 @@
         .textDiv{
             display: flex;
             justify-content: center;
-            padding: 2rem 4rem;
+            padding: 5rem 0rem 0 0;
+            height: 30vh;
 
             .smallText{
                 font-size: 13px;
@@ -41,13 +44,20 @@
             }
 
             .homeTitle{
-                position: relative;
-                top: 3rem;
                 display: flex;
                 justify-content: center;
+                flex-wrap: wrap;
                 padding: 0 2.5rem;
-                font-size: 35px;
+                font-size: 32px;
+
+                .quoteRed{
+                    display: flex;
+                    justify-content: center;
+                    color: var(--SecondaryTextColour);
+                }
             }
+
+            
         }
 
         .icons{
@@ -55,14 +65,14 @@
             justify-content: center;
             justify-content: space-around;
             position: relative;
-            top: -0.5rem;
+            top: 3rem;
         }
 
         .btn-container{
             display: flex;
             justify-content: center;
             position: relative;
-            top: -0.5rem;
+            top: 1.5rem;
 
             .btn-cv{
                 width: 17vh;
@@ -75,15 +85,13 @@
         .cardDiv{
             display: flex;
             justify-content: center;
-            position: relative;
-            top: 3rem;
             width: 100%;
-            height: 350px;
-            padding: 2rem 1rem;
+            height: 350vh;
+            padding: 0rem 0rem;
             background: var(--PrimaryTextColour);
             border-radius: 10px;
             gap: 1rem;
-            transform: translate(0%, -50%);
+            transform: translate(0%);
             overflow: hidden;
 
             .nameText{
@@ -92,13 +100,13 @@
                 margin: auto auto;
                 color: Black;
                 padding-bottom: 10px;
-                font-size: 85px;
+                font-size: 65px;
                 font-weight: 500;
-                line-height: 5rem;
+                line-height: 23rem;
                 white-space: nowrap;
                 overflow: hidden;
                 min-width: 100%;
-                height: 100%;
+                height: 400px;
                 animation: name 5s linear infinite;
 
                 .surnameText{
@@ -106,7 +114,7 @@
                     text-align: center;
                     white-space: nowrap;
                     height: 100%;
-                    font-size: 85px;
+                    font-size: 65px;
                     color: var(--SecondaryTextColour);
                     animation: 5s infinite;
                 }
@@ -114,7 +122,8 @@
 
             .img{
                 position: absolute;
-                width: 400px;
+                width: 350px;
+                top: -2.2rem;
             }
         }
     }
@@ -133,3 +142,25 @@
 }
 
 /* Media Queries */
+
+@media screen and (min-width:375px){
+    .home{
+        .homeContent{
+            .textDiv{
+                .homeTitle{
+                    font-size: 35px;
+                    padding: 0rem 3rem;
+                }
+            }
+            .icons{
+                top: 4rem;
+            }
+            .btn-container{
+                top: 2.5rem;
+            }
+            .cardDiv{
+                top:1rem;
+            }
+        }
+    }
+}

@@ -1,11 +1,12 @@
 import React from 'react'
+import '../about/About.css'
 
 function About() {
    return (
     <>
-    <section className='about'>
-        <div className="aboutContent">
-            this is a test
+    <section className='about container section'>
+        <div className="aboutContainer">
+
         </div>
     </section>
     </>
