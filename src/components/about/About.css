@@ -12,5 +12,223 @@
     .aboutContainer{
         background-color: grey;
         height: 100%;
+        .aboutContent{
+            width: 100%;
+            height: 100%;
+            padding: 1rem 0rem;
+            background-color: bisque;
+            .aboutMe{
+                background-color: chocolate;
+                height: 40%;
+                padding: 1rem 1rem;
+                font-size: 10px;
+                .aboutMeHeading{
+                    display: flex;
+                    justify-content: left;
+                    .aboutLine{
+                        width: 25%;
+                        height: 1%;
+                        position: relative;
+                        top: 0.5rem;
+                        left: 0.5rem;
+                    }
+                }
+                .aboutBlocks{
+                    background-color: darkgreen;
+                    height: 90%;
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    .aboutImg1{
+                        background-color: lightpink;
+                        width: 30%;
+                        height: 90%;
+                        border-radius: 10px;
+                        .aboutPicture{
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .aboutText{
+                        background-color: lightpink;
+                        margin-left: 5%;
+                        height: 90%;
+                        width: 65%;
+                        border-radius: 10px;
+                        .aboutTextHeading{
+                            display: flex;
+                            justify-content: center;
+                            font-size: 7px;
+                            font-weight: 600;
+                        }
+                        .subheading{
+                            display: flex;
+                            justify-content: center;
+                            text-align: center;
+                            font-size: 6px;
+                        }
+                        .topArrows{
+                            display: flex;
+                            justify-content: center;
+                            font-size: 7px;
+                            .icon{
+                                font-size: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+            .aboutInterests{
+                background-color: #D9171F;
+                height: 63%;
+                padding: 0rem 1rem;
+                .interestsContainer{
+                    background-color: white;
+                    height: 100%;
+                    font-size: 10px;
+                    .line{
+                        width: 70px;
+                        position: relative;
+                        top: -0.5rem;
+                        left: 4.5rem;
+                    }
+                    .interestList{
+                        background-color: darkkhaki;
+                        height: 10vh;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        position: relative;
+                        .sports{
+                            background-color: lightseagreen;
+                            width: 18vw;
+                            height: 6vh;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .interestText{
+                                font-size: 10px;
+                            }
+                        }
+                        .gaming{
+                            background-color: lightseagreen;
+                            width: 18vw;
+                            height: 6vh;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .interestText{
+                                font-size: 10px;
+                            }
+                        }
+                        .webDev{
+                            background-color: lightseagreen;
+                            width: 18vw;
+                            height: 6vh;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            .interestText{
+                                font-size: 8px;
+                            }
+                        }
+                        .AppDev{
+                            background-color: lightseagreen;
+                            width: 18vw;
+                            height: 6vh;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            .interestText{
+                                font-size: 8px;
+                            }
+                        }
+                        .Cyber{
+                            background-color: lightseagreen;
+                            width: 18vw;
+                            height: 6vh;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            .interestText{
+                                font-size: 8px;
+                            }
+                        }
+                        .Ai{
+                            background-color: lightseagreen;
+                            width: 18vw;
+                            height: 6vh;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            .interestText{
+                                font-size: 8px;
+                            }
+                        }
+                    }
+                    .workHeading{
+                        display: flex;
+                        justify-content: center;
+                        .line1{
+                            width: 25%;
+                            height: 1%;
+                            position: relative;
+                            top: 0.5rem;
+                            right: 0.5rem;
+                            }
+                        .Work{
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .line2{
+                            width: 25%;
+                            height: 1%;
+                            position: relative;
+                            top: 0.5rem;
+                            left: 0.5rem;
+                           
+                        }
+                    }
+                    .workList{
+                        background-color: lightseagreen;
+                        width: 100%;
+                        height: 20vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .projects{
+                            background-color: lightpink;
+                            border-radius: 10px;
+                            width: 40vw;
+                            height: 15vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
