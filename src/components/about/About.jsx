@@ -25,14 +25,22 @@ function About() {
                 Hi there, I'm Nathan Davids, a passionate software developer with a love for coding and creating elegant, efficient solutions.
                 </div>
                 <div className="topArrows">
-                  <FaGreaterThan className='icon'/> Age: 23 <FaGreaterThan className='icon'/> City: Cape Town, South Africa 
+                  <h2 className='arrowText'> >Age: 23 >City: Cape Town, South Africa </h2>
+                  <h2 className='arrowText'> > Occupation: Junior Software Developer </h2>
+                </div>
+                <div className="aboutTextContent">
+                  I'm a natural problem-solver, always eager to tackle new challenges and find creative solutions to complex issues.
+I'm always eager to explore new technologies to improve my skills and stay ahead of the curve.
+But beyond just coding, I'm also a team player who thrives in collaborative environments, and I'm committed to delivering high-quality code that's reliable, scalable, and easy to maintain.So if you're looking for a dedicated and experienced software developer to help take your project to the next level, feel free to get in touch!
                 </div>
               </div>
             </div>
           </div>
           <div className="aboutInterests">
             <div className="interestsContainer">
+              <div className="interestsHeading">
               <h2>Interests</h2> <hr className='line'/>
+              </div>
               <div className="interestList">
                 <div className="sports">
                   <h3 className='interestText'>Sports</h3>
