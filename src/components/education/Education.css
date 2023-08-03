@@ -1,0 +1,9 @@
+
+/* Dark Theme Colours */
+:root{
+    --BackgroundColour: black;
+    --PrimaryTextColour: #FFFFFF;
+    --SecondaryTextColour: #D9171F;
+    --BoxShadow: 0 2px 4px rgba(217, 23, 31, 1);
+    --ButtonColor: rgba(225, 225, 225, 0.05);
+}
