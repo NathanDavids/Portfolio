@@ -6,12 +6,18 @@ import About from './components/about/About'
 import Education from './components/education/Education'
 import Experience from './components/Experience/Experience'
 import Skills from './components/Skills/Skills'
-import Projects from './components/projects/projects'
+import Contact from './components/contact/contact'
 
 function App() {
    return (
     <>
-    <Projects/>
+    <Navbar/>
+    <Home/>
+    <About/>
+    <Education/>
+    <Experience/>
+    <Skills/>
+    <Contact/>
     </>
   )
 }
