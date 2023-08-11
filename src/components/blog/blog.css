@@ -1,0 +1,154 @@
+:root{
+    --BackgroundColour: black;
+    --PrimaryTextColour: #FFFFFF;
+    --SecondaryTextColour: #D9171F;
+    --BoxShadow: 0 2px 4px rgba(217, 23, 31, 1);
+    --ButtonColor: rgba(225, 225, 225, 0.05);
+}
+
+.blog{
+    width: 100%;
+    height: 100vh;
+    .blogContent{
+        width: 100%;
+        height: 100%;
+        .blogImage{
+            width: 100%;
+            height: 50%;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            background-image: url(../../assets/BlogHeader.png); /* Replace with the actual image path */
+            background-size: cover; /* Adjust as needed */
+            background-position: center center; /* Adjust as needed */
+            color: white; /* Text color for the heading */
+            .blogHeading{
+                position: absolute;
+                top: 50%; /* Vertically center the heading */
+                left: 50%; /* Horizontally center the heading */
+                transform: translate(-50%, -50%); /* Centering trick */
+                font-size: 250px;
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0); /* Semi-transparent background for the heading */
+                padding: 0px 20px;
+            }
+            .blogHeader{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .blogPostContainer{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 5rem;
+            .blogPost{
+                width: 90%;
+                height: 85%;
+                .postOne{
+                    position: relative;
+                    top: 2rem;;
+                    background-color: white;
+                    box-shadow: 15px 8px 20px rgba(217, 23, 31, 1);
+                    width: 30%;
+                    height: 70%;
+                    .postHeading{
+                        display: flex;
+                        justify-content: center;
+                        font-size: 45px
+                    }
+                    .postText{
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        font-size: 25px;
+                    }
+                    .readMore{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 200px;
+                        height: 60px;
+                        position: relative;
+                        left: 25%;
+                        color: var(--PrimaryTextColour);
+                        background-color: var(--BackgroundColour);
+                        border-radius: 20px;
+                        font-size: 35px;
+                        font-weight: 600;
+                    }
+                }
+                .postTwo{
+                    position: relative;
+                    top: -65%;
+                    left: 35%;
+                    background-color: white;
+                    box-shadow: 15px 8px 20px rgba(217, 23, 31, 1);
+                    width: 30%;
+                    height: 70%;
+                    .postHeading{
+                        display: flex;
+                        justify-content: center;
+                        font-size: 45px
+                    }
+                    .postText{
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        font-size: 25px;
+                    }
+                    .readMore{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 200px;
+                        height: 60px;
+                        position: relative;
+                        left: 25%;
+                        color: var(--PrimaryTextColour);
+                        background-color: var(--BackgroundColour);
+                        border-radius: 20px;
+                        font-size: 35px;
+                        font-weight: 600;
+                    }
+                }
+                .postThree{
+                    position: relative;
+                    top: -135%;
+                    left: 70%;
+                    background-color: white;
+                    box-shadow: 15px 8px 20px rgba(217, 23, 31, 1);
+                    width: 30%;
+                    height: 70%;
+                    .postHeading{
+                        display: flex;
+                        justify-content: center;
+                        font-size: 45px
+                    }
+                    .postText{
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        font-size: 25px;
+                    }
+                    .readMore{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 200px;
+                        height: 60px;
+                        position: relative;
+                        left: 25%;
+                        color: var(--PrimaryTextColour);
+                        background-color: var(--BackgroundColour);
+                        border-radius: 20px;
+                        font-size: 35px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

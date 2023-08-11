@@ -6,18 +6,14 @@ import About from './components/about/About'
 import Education from './components/education/Education'
 import Experience from './components/Experience/Experience'
 import Skills from './components/Skills/Skills'
+import Blog from './components/blog/blog'
 import Contact from './components/contact/contact'
+
 
 function App() {
    return (
     <>
-    <Navbar/>
-    <Home/>
-    <About/>
-    <Education/>
-    <Experience/>
-    <Skills/>
-    <Contact/>
+    <Blog/>
     </>
   )
 }
